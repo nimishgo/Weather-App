@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <script src="./main.js" defer></script>  
     <title>Weather App</title>
 </head>
 <body>
@@ -19,7 +20,25 @@
     </div>
 
     <div class="city_card" id="city_card">
-
+            
+        <h2 class="cityName" id="cityName">New York</h2>
+            
+        <div class="tempInfo" id="tempInfo">
+             <h3 class="temperature" id="temperature">21 <span class="unit" id="unit">°C</span></h3>
+                <span>
+                    °C
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>                  
+                    °F
+                </span>
+        </div>
+        <h3>Humidity : <span class="humidity"></span> Wind : <span class="wind-speed"> </span></h3>
+        <h3><span class="desc"> Rainy </span> <span><img class="icon" src="" alt="">OO</span></h3>
+        <div class="giphy">
+            <img src="" alt="">
+        </div>
     </div>
 
 </body>
