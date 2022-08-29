@@ -166,7 +166,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \***********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"3ad08c354299b2338e1f.jpg\";\n\n//# sourceURL=webpack://weather-app/./src/assets/background.jpg?");
+eval("module.exports = __webpack_require__.p + \"56f979507b6105316e6b.jpg\";\n\n//# sourceURL=webpack://weather-app/./src/assets/background.jpg?");
 
 /***/ })
 
