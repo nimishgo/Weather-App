@@ -24,7 +24,7 @@ module.exports = {
             },
             {
                 test: /\.(png|svg|gif|jpg|webp)$/i,
-                loader: 'url-loader',
+                // loader: 'url-loader',
                 type: 'asset/resource',
             }
         ]
