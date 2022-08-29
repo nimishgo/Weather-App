@@ -146,7 +146,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"genGifs\": () => (/* binding */ genGifs)\n/* harmony export */ });\nconst giphyKey = '1RrR64yeXUReOp4UeWAgYVWNUXlTVSLj';\n\n\nasync function genGifs(text) {\n\n        const res = await fetch(`https://api.giphy.com/v1/gifs/translate?api_key=${giphyKey}&s=${text}`,{mode:\"cors\"});\n        // https://api.giphy.com/v1/gifs/translate?api_key=1RrR64yeXUReOp4UeWAgYVWNUXlTVSLj&s=${txt.value}`,\n        \n        const gifData = await res.json();\n        console.log(gifData);\n        const url = gifData.data.images.original.url;\n\n        return url;\n}\n\n\n//# sourceURL=webpack://weather-app/./src/giphyGifs.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"genGifs\": () => (/* binding */ genGifs)\n/* harmony export */ });\nconst giphyKey = '1RrR64yeXUReOp4UeWAgYVWNUXlTVSLj';\n\n\nasync function genGifs(text) {\n\n        const res = await fetch(`https://api.giphy.com/v1/gifs/translate?api_key=${giphyKey}&s=${text}`,{mode:\"cors\"});\n        // https://api.giphy.com/v1/gifs/translate?api_key=1RrR64yeXUReOp4UeWAgYVWNUXlTVSLj&s=${txt.value}`,\n\n        const gifData = await res.json();\n        console.log(gifData);\n        const url = gifData.data.images.original.url;\n\n        return url;\n}\n\n\n//# sourceURL=webpack://weather-app/./src/giphyGifs.js?");
 
 /***/ }),
 
