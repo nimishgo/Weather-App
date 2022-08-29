@@ -1,0 +1,181 @@
+* , *::after , *::before {
+    box-sizing: border-box;
+}
+:root {
+    --yellow-green-crayola: #B8D98Bff;
+    --msu-green: #12433Bff;
+    --shiny-shamrock: #599F72ff;
+    --charleston-green: #0F2127ff;
+    --yellow-green-crayola-2: #D6E994ff;
+    --yellow-green-crayola-3: #C8E590ff;
+    --russian-green: #52946Aff;
+    --rich-black: #062D30ff;
+    --forest-green-crayola: #6BA677ff;
+    --brunswick-green: #215241ff
+}
+body {
+    background-image: url('../assets/background.jpg');
+    font-family: 'Montserrat', sans-serif;
+}
+/* Toggle Button */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--msu-green);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--shiny-shamrock);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px var(--russian-green);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /* Styling Header */
+  .header {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      color: #2aa166;
+  }
+
+  /* Search Section */
+  .search {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    gap: 10px;
+  }
+
+  input[type="search"]
+  {
+    border: none;
+    color: black;
+    font-size: 16px;
+    opacity: 0.5;
+    width: 400px;
+    border-radius: 1.5em;
+    background: var(--shiny-shamrock);
+    padding: 10px;
+  }
+
+  button#searchButton {
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    opacity: 0.5;
+    background-color: var(--shiny-shamrock);
+    cursor: pointer;
+  }
+
+  button#searchButton:hover {
+    background-color: #1eaf66;
+  }
+
+  img#gif {
+    width: 40vw;
+    height: 40vh;
+
+    max-width: 500px;
+    max-height: 500px;
+
+    min-width: 250px;
+    min-height: 250px;
+
+    border: 10px solid var(--forest-green-crayola);
+    border-radius: 1em;
+    margin: 10px;
+    box-shadow: 10px 10px 5px var(--charleston-green);
+  }
+
+  .display {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: 100px auto;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .city_card {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    width: 400px;
+    height: 400px;
+    background-color: var(--forest-green-crayola);
+    padding: 16px;
+    color: var(--yellow-green-crayola-2);
+    border: 10px solid var(--charleston-green);
+    box-shadow: 10px 10px 5px var(--charleston-green);
+  }
+
+  .last-row {
+    display: flex;
+    align-items: center;
+  }
+
+  .tempInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .unitToggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    gap: 4px;
+  }
